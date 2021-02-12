@@ -1,0 +1,94 @@
+//Student.java
+package Prob2A;
+
+public class Student {
+	private String name;
+	private GradeReport report;
+	
+	public Student(String name) {
+		this.name = name;
+		report = new GradeReport(this);	
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public GradeReport getGrade() {
+		return report;
+	}
+
+	@Override
+	public String toString() {
+		return "Name: " + name + ". Grade: " + report;
+	}
+}	
+
+
+// GradeReport.java
+package Prob2A
+
+import java.util.*;
+
+public class GradeReport {
+	private Student student;
+	private String grade;
+	
+	public GradeReport(String grade) {
+		this.grade = grade;
+	}
+	
+	public void addGrade(String gr) {
+		this.grade = gr;
+	}
+	
+	GradeReport(Student st) {
+		this.student = st;
+	}
+	
+	public String getGrade() {
+		return grade;
+	}
+	
+	public Student getStudent() {
+		return student;
+	}
+	
+	public void setStudent(Student st) {
+		this.student = st;
+	}
+	
+	public String toString() {
+		return grade;
+	}
+}
+
+
+//Main.java
+package Prob2A
+
+import java.util.*;
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Student[] stu = new Student[6];
+		stu[0] = new Student("Sam");
+		stu[0].getGrade().addGrade("B");
+		stu[1] = new Student("Rob");
+		stu[1].getGrade().addGrade("A");
+		stu[2] = new Student("John");
+		stu[2].getGrade().addGrade("B");
+		stu[3] = new Student("Rose");
+		stu[3].getGrade().addGrade("C");
+		stu[4] = new Student("Alan");
+		stu[4].getGrade().addGrade("A");
+		stu[5] = new Student("Missy");
+		stu[5].getGrade().addGrade("A");
+		
+		for(Student s: stu) {
+			System.out.println(s);
+		}
+	}
+}
