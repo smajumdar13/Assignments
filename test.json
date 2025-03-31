@@ -1,0 +1,28 @@
+{
+  "input": {
+    "sourceId": "zCVLrog8RXIyFnpdS5T4U6bKigKiavHn",
+    "accountName": "daniel.mitchell",
+    "firstName": "John",
+    "lastName": "Mitchell",
+    "phone": 5138674196,
+    "email": "daniel.mitchell@email.com",
+    "data": {
+      "homeAddress": "Wall Street, San Jose, Indiana, United States, 00369",
+      "jobTitle": "Office Manager",
+      "workerType": "Consultant",
+      "department": "Marketing",
+      "costCenter": "1141",
+      "legalEntity": "Company 3",
+      "workPhone": 7812096400,
+      "workCountry": "United States",
+      "requiredItems": [
+        "Monitor",
+        "iPad"
+      ],
+      "comments": "Random comment for Daniel Mitchell"
+    },
+    "manager": "Manager 2",
+    "startDate": "2024-08-31",
+    "endDate": "2025-08-19"
+  }
+}
